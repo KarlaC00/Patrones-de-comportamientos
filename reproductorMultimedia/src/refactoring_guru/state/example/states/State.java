@@ -3,14 +3,14 @@ package refactoring_guru.state.example.states;
 import refactoring_guru.state.example.ui.Player;
 
 /**
- * Common interface for all states.
+ * Interfaz común para todos los estados.
  */
 public abstract class State {
     Player player;
 
     /**
-     * Context passes itself through the state constructor. This may help a
-     * state to fetch some useful context data if needed.
+     * El contexto pasa por sí mismo a través del constructor de estado. Esto puede ayudar a un
+     * estado para obtener algunos datos de contexto útiles si es necesario.
      */
     State(Player player) {
         this.player = player;

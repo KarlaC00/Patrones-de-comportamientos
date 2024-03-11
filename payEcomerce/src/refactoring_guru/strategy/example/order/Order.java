@@ -3,9 +3,9 @@ package refactoring_guru.strategy.example.order;
 import refactoring_guru.strategy.example.strategies.PayStrategy;
 
 /**
- * Order class. Doesn't know the concrete payment method (strategy) user has
- * picked. It uses common strategy interface to delegate collecting payment data
- * to strategy object. It can be used to save order to database.
+ * Clase de orden. No sabe el método de pago concreto (estrategia) que tiene el usuario
+ * escogido. Utiliza una interfaz de estrategia común para delegar la recopilación de datos de pago.
+ * al objeto de estrategia. Se puede utilizar para guardar pedidos en la base de datos.
  */
 public class Order {
     private int totalCost = 0;
@@ -13,7 +13,7 @@ public class Order {
 
     public void processOrder(PayStrategy strategy) {
         strategy.collectPaymentDetails();
-        // Here we could collect and store payment data from the strategy.
+        // Aquí podríamos recopilar y almacenar datos de pago de la estrategia.
     }
 
     public void setTotalCost(int cost) {

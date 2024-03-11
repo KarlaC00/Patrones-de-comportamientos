@@ -1,7 +1,7 @@
 package refactoring_guru.strategy.example.strategies;
 
 /**
- * Dummy credit card class.
+ * Clase de tarjeta de crédito ficticia.
  */
 public class CreditCard {
     private int amount;

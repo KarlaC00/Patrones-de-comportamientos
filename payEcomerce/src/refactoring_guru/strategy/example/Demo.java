@@ -12,7 +12,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * World first console e-commerce application.
+ * Primera aplicación de comercio electrónico de consola del mundo.
  */
 public class Demo {
     private static Map<Integer, Integer> priceOnProducts = new HashMap<>();
@@ -53,8 +53,8 @@ public class Demo {
                         "2 - Credit Card");
                 String paymentMethod = reader.readLine();
 
-                // Client creates different strategies based on input from user,
-                // application configuration, etc.
+                // El cliente crea diferentes estrategias basadas en las aportaciones del usuario,
+                // configuración de aplicaciones, etc.
                 if (paymentMethod.equals("1")) {
                     strategy = new PayByPayPal();
                 } else {
@@ -62,15 +62,14 @@ public class Demo {
                 }
             }
 
-            // Order object delegates gathering payment data to strategy object,
-            // since only strategies know what data they need to process a
-            // payment.
+            // El objeto de orden delega la recopilación de datos de pago al objeto de estrategia,
+            // ya que sólo las estrategias saben qué datos necesitan para procesar un pago
             order.processOrder(strategy);
 
             System.out.print("Pay " + order.getTotalCost() + " units or Continue shopping? P/C: ");
             String proceed = reader.readLine();
             if (proceed.equalsIgnoreCase("P")) {
-                // Finally, strategy handles the payment.
+                // Finalmente, la estrategia maneja el pago.
                 if (strategy.pay(order.getTotalCost())) {
                     System.out.println("Payment has been successful.");
                 } else {

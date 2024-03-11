@@ -3,7 +3,7 @@ package refactoring_guru.state.example.states;
 import refactoring_guru.state.example.ui.Player;
 
 /**
- * Concrete states provide the special implementation for all interface methods.
+ * Los estados concretos proporcionan la implementación especial para todos los métodos de interfaz.
  */
 public class LockedState extends State {
 

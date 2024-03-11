@@ -3,7 +3,7 @@ package refactoring_guru.state.example.states;
 import refactoring_guru.state.example.ui.Player;
 
 /**
- * They can also trigger state transitions in the context.
+ * Ellas también pueden desencadenar transiciones de estado en el contexto.
  */
 public class ReadyState extends State {
 

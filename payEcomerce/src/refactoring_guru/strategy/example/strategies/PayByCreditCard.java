@@ -5,14 +5,14 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- * Concrete strategy. Implements credit card payment method.
+ * Estrategia concreta. Implementa método de pago con tarjeta de crédito.
  */
 public class PayByCreditCard implements PayStrategy {
     private final BufferedReader READER = new BufferedReader(new InputStreamReader(System.in));
     private CreditCard card;
 
     /**
-     * Collect credit card data.
+     * Recopilar datos de tarjetas de crédito.
      */
     @Override
     public void collectPaymentDetails() {
@@ -25,7 +25,7 @@ public class PayByCreditCard implements PayStrategy {
             String cvv = READER.readLine();
             card = new CreditCard(number, date, cvv);
 
-            // Validate credit card number...
+            // Validar el numero de targeta de credito...
 
         } catch (IOException ex) {
             ex.printStackTrace();
@@ -33,7 +33,7 @@ public class PayByCreditCard implements PayStrategy {
     }
 
     /**
-     * After card validation we can charge customer's credit card.
+     * Después de la validación de la tarjeta podemos cargar la tarjeta de crédito del cliente.
      */
     @Override
     public boolean pay(int paymentAmount) {

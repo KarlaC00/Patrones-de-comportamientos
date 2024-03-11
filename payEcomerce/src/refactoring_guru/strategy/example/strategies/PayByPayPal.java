@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Concrete strategy. Implements PayPal payment method.
+ * Estrategia concreta. Implementa el método de pago PayPal.
  */
 public class PayByPayPal implements PayStrategy {
     private static final Map<String, String> DATA_BASE = new HashMap<>();
@@ -22,7 +22,7 @@ public class PayByPayPal implements PayStrategy {
     }
 
     /**
-     * Collect customer's data.
+     * Recolectar los datos del cliente.
      */
     @Override
     public void collectPaymentDetails() {
@@ -49,7 +49,7 @@ public class PayByPayPal implements PayStrategy {
     }
 
     /**
-     * Save customer data for future shopping attempts.
+     * Guarde los datos del cliente para futuros intentos de compra.
      */
     @Override
     public boolean pay(int paymentAmount) {
