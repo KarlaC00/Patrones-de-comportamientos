@@ -10,7 +10,7 @@ public class PruebaCadena {
         FrontEnd presentacion = new FrontEnd(intermediario);
 
         do{
-            System.out.println("Selecciona la ayuda que desea observar:");
+            System.out.println("Selecciona la ayuda que deseas observar:");
             System.out.println("1) Presentación");
             System.out.println("2) Intermediario");
             System.out.println("3) Aplicación");
