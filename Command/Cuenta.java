@@ -1,5 +1,5 @@
+//Receptora
 public class Cuenta {
-    //Receiver
     private int id;
     private double saldo;
 
@@ -11,11 +11,11 @@ public class Cuenta {
 
     public void retirar (double monto){
         this.saldo = saldo-monto;
-        System.out.println("[COMANDO RETIRAR] Cuenta: "+ id+ "Saldo: "+this.saldo);
+        System.out.println("[COMANDO RETIRAR] Cuenta: "+ id+ " , Saldo: "+this.saldo);
     }
 
     public void depositar (double monto){
         this.saldo = saldo+monto;
-        System.out.println("[COMANDO DEPOSITAR] Cuenta: "+ id+ "Saldo: "+this.saldo);
+        System.out.println("[COMANDO DEPOSITAR] Cuenta: "+ id+ " , Saldo: "+this.saldo);
     }
 }
